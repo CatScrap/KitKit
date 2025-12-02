@@ -25,6 +25,20 @@
       padding: 40px 0;
     }
     
+    .logo-image {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      display: block;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    
+    .logo-image:hover {
+      transform: scale(1.05);
+    }
+    
     .logo {
       font-size: 48px;
       font-weight: bold;
@@ -192,6 +206,10 @@
 <body>
   <div class="container">
     <header>
+      <!-- Logo Image -->
+      <img src="KitKit_Logo_1.png" alt="KitKit Logo" class="logo-image">
+      
+      <!-- Logo Text -->
       <div class="logo">KitKit</div>
       <p class="tagline">App Collections Made Simple</p>
     </header>
