@@ -25,20 +25,6 @@
       padding: 40px 0;
     }
     
-    .logo-image {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 20px;
-      display: block;
-      border-radius: 25px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
-    }
-    
-    .logo-image:hover {
-      transform: scale(1.05);
-    }
-    
     .logo {
       font-size: 48px;
       font-weight: bold;
@@ -165,9 +151,29 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
     
+    .legal-links {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      border-top: 2px solid rgba(255,255,255,0.1);
+    }
+    
+    .legal-links a {
+      color: #f8f8f8;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+    
+    .legal-links a:hover {
+      color: #FF7518;
+      text-decoration: underline;
+    }
+    
     footer {
       text-align: center;
-      padding: 30px 0;
+      padding: 30px 0 10px 0;
       color: #f8f8f8;
       font-size: 14px;
       font-weight: bold;
@@ -206,10 +212,6 @@
 <body>
   <div class="container">
     <header>
-      <!-- Logo Image -->
-      <img src="KitKit_Logo_1.png" alt="KitKit Logo" class="logo-image">
-      
-      <!-- Logo Text -->
       <div class="logo">KitKit</div>
       <p class="tagline">App Collections Made Simple</p>
     </header>
@@ -255,6 +257,12 @@
     
     <div class="cta">
       <a href="https://github.com/CatScrap/KitKit" class="cta-button">Explore KitKit</a>
+    </div>
+    
+    <div class="legal-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <span style="color: rgba(255,255,255,0.3);">•</span>
+      <a href="terms.html">Terms of Service</a>
     </div>
     
     <footer>
