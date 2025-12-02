@@ -98,12 +98,6 @@
       background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF7518' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
     
-    .separator {
-      height: 1px;
-      background: linear-gradient(to right, transparent, #ddd, transparent);
-      margin: 15px 0;
-    }
-    
     .dashed-border-top {
       height: 2px;
       background-image: linear-gradient(to right, #FF7518 50%, transparent 50%);
@@ -151,29 +145,77 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
     
-    .legal-links {
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
-      border-top: 2px solid rgba(255,255,255,0.1);
+    .legal-section {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      margin: 60px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     
-    .legal-links a {
-      color: #f8f8f8;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 14px;
-      transition: color 0.3s ease;
+    .legal-section h2 {
+      color: #1d1d1f;
+      font-size: 32px;
+      margin-bottom: 10px;
+      border-bottom: 3px solid #FF7518;
+      padding-bottom: 10px;
     }
     
-    .legal-links a:hover {
-      color: #FF7518;
-      text-decoration: underline;
+    .legal-section h3 {
+      color: #1d1d1f;
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .legal-section h4 {
+      color: #1d1d1f;
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .legal-section p {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    
+    .legal-section ul {
+      margin-left: 25px;
+      margin-bottom: 15px;
+    }
+    
+    .legal-section li {
+      margin-bottom: 8px;
+    }
+    
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    
+    .danger-box {
+      background: #f8d7da;
+      border-left: 4px solid #dc3545;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    
+    .info-box {
+      background: #d1ecf1;
+      border-left: 4px solid #0c5460;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
     }
     
     footer {
       text-align: center;
-      padding: 30px 0 10px 0;
+      padding: 30px 0;
       color: #f8f8f8;
       font-size: 14px;
       font-weight: bold;
@@ -258,11 +300,192 @@
     <div class="cta">
       <a href="https://github.com/CatScrap/KitKit" class="cta-button">Explore KitKit</a>
     </div>
-    
-    <div class="legal-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <span style="color: rgba(255,255,255,0.3);">•</span>
-      <a href="terms.html">Terms of Service</a>
+
+    <!-- PRIVACY POLICY SECTION -->
+    <div class="legal-section" id="privacy">
+      <h2>Privacy Policy</h2>
+      <p><em>Last Updated: December 2, 2025</em></p>
+
+      <h3>1. Introduction</h3>
+      <p>CatScrap ("we," "us," or "our") operates the KitKit mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.</p>
+      <p>By using KitKit, you agree to the collection and use of information in accordance with this policy.</p>
+
+      <h3>2. Information We Collect</h3>
+      
+      <h4>2.1 Apple Sign-In Information</h4>
+      <p>When you sign in with Apple, we collect:</p>
+      <ul>
+        <li>Unique Apple User ID (required)</li>
+        <li>Email address (if you choose to share it)</li>
+        <li>Full name (if you choose to share it)</li>
+      </ul>
+
+      <h4>2.2 Kit Creation Data</h4>
+      <p>We store:</p>
+      <ul>
+        <li>HTML/CSS/JavaScript code you create in kits</li>
+        <li>Kit names, descriptions, and metadata</li>
+        <li>Kit creation and modification timestamps</li>
+        <li>Version history of your kits</li>
+      </ul>
+
+      <h4>2.3 Usage Data</h4>
+      <p>We automatically collect:</p>
+      <ul>
+        <li>Device type and operating system version</li>
+        <li>App usage statistics (features used, errors encountered)</li>
+        <li>Firebase Analytics data (crashes, performance metrics)</li>
+      </ul>
+
+      <h4>2.4 Subscription & Payment Data</h4>
+      <p>If you subscribe to Premium:</p>
+      <ul>
+        <li>Subscription status and expiration date</li>
+        <li>AI credit balance</li>
+        <li>Purchase history (processed by Apple, not stored by us)</li>
+      </ul>
+
+      <h3>3. Why We Collect This Data</h3>
+      
+      <h4>3.1 Legal Accountability</h4>
+      <div class="warning-box">
+        <p><strong>Important:</strong> We require authentication because users create executable code. Linking kits to verified Apple IDs protects our service and users from:</p>
+        <ul>
+          <li>Malicious code distribution</li>
+          <li>Copyright infringement</li>
+          <li>Illegal content</li>
+          <li>Scams and fraud</li>
+        </ul>
+      </div>
+
+      <h4>3.2 Service Functionality</h4>
+      <ul>
+        <li>Sync your kits across devices (future feature)</li>
+        <li>Maintain your subscription and credit balance</li>
+        <li>Provide personalized AI assistance</li>
+        <li>Enable future KitChain blockchain features</li>
+      </ul>
+
+      <h3>4. How We Store Your Data</h3>
+      <p>Your data is stored on Google Firebase servers:</p>
+      <ul>
+        <li>Location: United States (us-central1)</li>
+        <li>Encryption: At rest and in transit</li>
+        <li>Retention: Until you delete your account</li>
+      </ul>
+
+      <h3>5. Data Sharing</h3>
+      <p><strong>We do NOT sell, rent, or share your personal data with third parties</strong>, except:</p>
+      <ul>
+        <li>Google Firebase (cloud hosting)</li>
+        <li>Apple App Store (payment processing)</li>
+        <li>OpenAI and Anthropic (AI API services - only code you submit, never personal data)</li>
+        <li>When required by law or court order</li>
+      </ul>
+
+      <h3>6. Your Rights</h3>
+      
+      <h4>6.1 Access Your Data</h4>
+      <p>Contact us to request a copy of your data.</p>
+
+      <h4>6.2 Delete Your Account</h4>
+      <div class="info-box">
+        <p><strong>Go to: Settings → Account Management → Delete Account</strong></p>
+        <p>This permanently deletes:</p>
+        <ul>
+          <li>Your user profile</li>
+          <li>All kits you've created</li>
+          <li>Credit balance and subscription history</li>
+          <li><strong>Cannot be undone</strong></li>
+        </ul>
+      </div>
+
+      <h4>6.3 Export Your Kits</h4>
+      <p>Use the Export feature to save kits as .kit files before deleting your account.</p>
+
+      <h3>7. Security</h3>
+      <p>We implement industry-standard security measures:</p>
+      <ul>
+        <li>Encrypted data transmission (HTTPS/TLS)</li>
+        <li>Encrypted storage (Firebase encryption)</li>
+        <li>Authentication-required API access</li>
+        <li>Regular security audits</li>
+      </ul>
+
+      <h3>8. Contact Us</h3>
+      <p>For privacy questions or to exercise your rights:</p>
+      <p><strong>Email:</strong> support@catscrap.com<br>
+      <strong>Developer:</strong> CatScrap</p>
+    </div>
+
+    <!-- TERMS OF SERVICE SECTION -->
+    <div class="legal-section" id="terms">
+      <h2>Terms of Service</h2>
+      <p><em>Last Updated: December 2, 2025</em></p>
+
+      <div class="warning-box">
+        <p><strong>PLEASE READ THESE TERMS CAREFULLY BEFORE USING KITKIT.</strong></p>
+        <p>By downloading, installing, or using KitKit, you agree to be bound by these Terms of Service. If you do not agree, do not use the App.</p>
+      </div>
+
+      <h3>1. Acceptance of Terms</h3>
+      <p>These Terms constitute a legal agreement between you and CatScrap. By using KitKit, you represent that:</p>
+      <ul>
+        <li>You are at least 13 years of age</li>
+        <li>You have the legal capacity to enter into this agreement</li>
+        <li>You will comply with all applicable laws</li>
+      </ul>
+
+      <h3>2. Account Requirements</h3>
+      
+      <h4>2.1 Mandatory Sign-In</h4>
+      <div class="warning-box">
+        <p><strong>KitKit requires Apple Sign-In for all users.</strong> This is necessary for:</p>
+        <ul>
+          <li><strong>Legal accountability:</strong> Users create executable code that could be harmful if abused</li>
+          <li><strong>Security:</strong> Tracking kit creators prevents malicious content distribution</li>
+          <li><strong>Future features:</strong> KitChain blockchain service requires verified identity</li>
+        </ul>
+      </div>
+
+      <h3>3. User Code of Conduct</h3>
+
+      <h4>3.1 Prohibited Content</h4>
+      <div class="danger-box">
+        <p><strong>❌ You may NOT create kits that contain:</strong></p>
+        <ul>
+          <li>Malicious code (viruses, malware, crypto miners)</li>
+          <li>Illegal content (copyright infringement, piracy)</li>
+          <li>Harmful content (phishing, hate speech, violence)</li>
+          <li>Privacy violations (unauthorized tracking, data theft)</li>
+        </ul>
+      </div>
+
+      <h3>4. Intellectual Property</h3>
+      <p><strong>You retain all ownership rights to kits you create.</strong> By using KitKit, you grant us a limited license to store and display your kits.</p>
+
+      <h3>5. Premium Subscriptions</h3>
+      <p><strong>Free Tier:</strong> 5 kits maximum, ads shown</p>
+      <p><strong>Premium Tier ($4.99/month or $49.99/year):</strong> Unlimited kits, no ads, 500 AI credits per month</p>
+
+      <h3>6. Account Deletion and Forfeitures</h3>
+      <div class="danger-box">
+        <p><strong>⚠️ IMPORTANT: Deleting your account results in immediate and permanent forfeiture of:</strong></p>
+        <ul>
+          <li><strong>All Premium subscription benefits</strong> (no refunds for remaining time)</li>
+          <li><strong>All AI credits</strong> (purchased or earned, no refunds)</li>
+          <li><strong>All kits and data</strong> (cannot be recovered)</li>
+        </ul>
+        <p><strong>Before deleting:</strong> Cancel subscription, export kits, use remaining credits.</p>
+      </div>
+
+      <h3>7. Limitation of Liability</h3>
+      <p>KITKIT IS PROVIDED "AS IS" WITHOUT WARRANTIES. CatScrap SHALL NOT BE LIABLE FOR LOSS OF DATA, SERVICE INTERRUPTIONS, OR DAMAGE CAUSED BY KITS YOU CREATE.</p>
+
+      <h3>8. Contact Us</h3>
+      <p>Questions about these Terms:</p>
+      <p><strong>Email:</strong> support@catscrap.com<br>
+      <strong>Developer:</strong> CatScrap</p>
     </div>
     
     <footer>
